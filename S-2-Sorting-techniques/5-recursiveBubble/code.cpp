@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void bubbleSort(vector<int>& arr) {
+        recBubble(arr,0);
+    }
+    
+void recBubble(vector <int> &arr,int i){
+    int swapDone=0;
+    for (int j=0;j<arr.size()-1-i;j++){
+        if (arr[j]>arr[j+1]){
+            int temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+            swapDone=1;
+        } 
+    }
+    if (i==0 && swapDone==0){
+        return;
+    }
+    if (i<arr.size()-1){
+        recBubble(arr,++i);
+    }
+}
+
+int main(){
+    vector<int> arr = {5, 6, 7, 1, 5};
+    bubbleSort(arr);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
